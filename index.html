@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>WebVR 360 Video</title>
+    <meta name="description" content="WebVR 360 Video">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <style>
+    a-assets{
+      display: inline;
+    }
+  </style>
+  <body>
+    <a-scene>
+      <a-assets>
+        <video id="360video" src="360small.mp4" autoplay></video>
+      </a-assets>
+      <a-videosphere src="#360video" rotation="0 0 0"></a-videosphere>
+    </a-scene>
+  </body>
+</html>
